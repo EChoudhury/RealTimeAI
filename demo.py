@@ -152,7 +152,7 @@ def execute_2(img, org):
 
 parser = argparse.ArgumentParser(description='TensorRT pose estimation run')
 parser.add_argument('--image', type=str, default='/home/erich/Documents/trt_pose/tasks/human_pose/person2.png')
-parser.add_argument('--model', type=str, default='densenet', help = 'resnet or densenet' )
+parser.add_argument('--model', type=str, default='resnet', help = 'resnet or densenet' )
 args = parser.parse_args()
 
 with open('human_pose.json', 'r') as f:
